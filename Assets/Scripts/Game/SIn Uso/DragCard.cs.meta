@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e58e98ee21d15ab4b9f34e54fa564d83
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - CardSlot: {instanceID: 0}
+  - Unidad: {instanceID: 0}
+  - mainCamera: {instanceID: 0}
+  - canvas: {instanceID: 0}
+  - ant: {fileID: 2788616575755096392, guid: 7a0cc218708492d42baee0d807a380a5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
