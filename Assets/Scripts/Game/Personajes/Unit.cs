@@ -17,6 +17,7 @@ public class Unit : MonoBehaviour, IDamageable
 	[SerializeField]
 	private List<GameObject> hitTargets;
 
+	public Animator animator;
 	public Actor3D UnitModel { get { return unitModel; } }
 	public GameObject Target
 	{
@@ -40,6 +41,7 @@ public class Unit : MonoBehaviour, IDamageable
 
     private void Start()
     {
+		animator = GetComponent<Animator>();
 		List<GameObject> objects = GameManager.Instance.Objects;
 		objects = GameManager.GetAllEnemies(transform.position, objects, gameObject.tag);
 		target = GameFunctions.GetNearestTarget(objects, stats.DetectionObject, gameObject.tag);
@@ -79,10 +81,16 @@ public class Unit : MonoBehaviour, IDamageable
 					{
 						if(GameFunctions.CanAttack(gameObject.tag, target.tag, damageable, stats))
 						{
+							animator.SetBool("isPunching", true);
 							GameFunctions.Attack(damageable, stats.BaseDamage);
 							stats.CurrAttackDelay = 0;
 						}
+						
 					}
+				}
+				else
+				{
+					animator.SetBool("isPunching", false);
 				}
 			}
 		} else

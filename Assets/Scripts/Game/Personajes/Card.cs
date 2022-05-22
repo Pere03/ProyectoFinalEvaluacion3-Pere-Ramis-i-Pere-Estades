@@ -89,7 +89,8 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit raycastHit))
             {
-                GameFunctions.SpawnUnit(cardInfo.Prefab, playerInfo.UnitTransform, raycastHit.point);
+                //GameFunctions.SpawnUnit(cardInfo.Prefab, playerInfo.UnitTransform, raycastHit.point);
+                Instantiate(cardInfo.Prefab, raycastHit.point, transform.rotation);
             }
             Destroy(gameObject);
         }

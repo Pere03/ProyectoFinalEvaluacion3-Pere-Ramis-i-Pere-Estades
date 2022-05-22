@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 551780633808731054}
   - component: {fileID: 551780633808731055}
   m_Layer: 0
-  m_Name: Torre_2
+  m_Name: Torre_1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

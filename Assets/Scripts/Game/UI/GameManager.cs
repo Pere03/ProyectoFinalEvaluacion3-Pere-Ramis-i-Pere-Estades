@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     [SerializeField] private List<GameObject> objects;
 
+    public GameObject Prefab;
+
     public static GameManager Instance { get { return instance; } }
     public List<GameObject> Objects { get { return objects; } }
 
@@ -14,6 +16,11 @@ public class GameManager : MonoBehaviour
     {
         if (instance != this)
             instance = this;
+    }
+
+    private void Update()
+    {
+        Spawn();
     }
 
     public static List<GameObject> GetAllEnemies(Vector3 pos, List<GameObject> objects, string tag, float range)
@@ -65,5 +72,13 @@ public class GameManager : MonoBehaviour
     public static void AddObject(GameObject go)
     {
         Instance.Objects.Add(go);
+    }
+
+    public void Spawn()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(Prefab, new Vector3(9,0,5), transform.rotation);
+        }
     }
 }
