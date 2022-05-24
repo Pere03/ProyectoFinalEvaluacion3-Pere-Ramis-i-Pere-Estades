@@ -444,8 +444,8 @@ GameObject:
   - component: {fileID: 6848224938866848461}
   - component: {fileID: 5924395446949465424}
   m_Layer: 0
-  m_Name: Prueba_Carta_1
-  m_TagString: Player
+  m_Name: Prueba_Carta_1 2
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -545,6 +545,7 @@ MonoBehaviour:
     objectType: 0
     objectAttackable: 0
   hitTargets: []
+  animator: {fileID: 0}
 --- !u!114 &6848224938866848459
 MonoBehaviour:
   m_ObjectHideFlags: 0

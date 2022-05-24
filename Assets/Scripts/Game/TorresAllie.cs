@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Torres : MonoBehaviour, IDamageable
+public class TorresAllie : MonoBehaviour, IDamageable
 {
     [SerializeField]
     private BaseStats stats;

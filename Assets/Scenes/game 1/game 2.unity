@@ -289,7 +289,6 @@ MonoBehaviour:
   CoronasEnemy: {fileID: 1932464230}
   temporizador: {fileID: 437262291}
   timeValue: 180
-  username: {fileID: 496398528}
 --- !u!114 &74164214
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
@@ -13,8 +14,12 @@ public class MenuManager : MonoBehaviour
     public GameObject Pekka_Menu;
     public GameObject ReyDuende_Menu;
 
+    public TMP_InputField loadedName;
+
     void Start()
     {
+        LoadUserOptions();
+
         ReyBarbaro_Menu.SetActive(false);
         Ejercito_Menu.SetActive(false);
         MiniPekka_Menu.SetActive(false);
@@ -25,13 +30,18 @@ public class MenuManager : MonoBehaviour
         ReyDuende_Menu.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SaveUserOptions()
     {
-        
+        DataPersistence.sharedInstance.saveName = loadedName.text;
+        DataPersistence.sharedInstance.Data();
     }
 
-    public void Rey_Barbaro()
+    public void LoadUserOptions()
+    {
+        loadedName.text = PlayerPrefs.GetString("NOMBRE");
+    }
+
+        public void Rey_Barbaro()
     {
         ReyBarbaro_Menu.SetActive(true);
     }
