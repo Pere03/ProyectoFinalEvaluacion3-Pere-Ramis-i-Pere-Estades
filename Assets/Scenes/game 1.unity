@@ -205,6 +205,7 @@ MonoBehaviour:
   - {fileID: 271694041}
   - {fileID: 6848224938866848462, guid: cfccea8b55ab0e14a9183c9175ac83b9, type: 3}
   - {fileID: 1183876963644688050, guid: 7797a4f0262bfd54e82750663cf3be1f, type: 3}
+  - {fileID: 4596061905169150917, guid: aa2202a82e1d274418555e7d494a8da3, type: 3}
   Prefab: {fileID: 6848224938866848462, guid: cfccea8b55ab0e14a9183c9175ac83b9, type: 3}
 --- !u!114 &74164214
 MonoBehaviour:
@@ -340,15 +341,15 @@ MonoBehaviour:
       cost: 4
       prefab: {fileID: 1183876963644688050, guid: 7797a4f0262bfd54e82750663cf3be1f, type: 3}
     - index: 0
-      name: Barbaro
-      icon: {fileID: 21300000, guid: afb9ed02c0018df488853864d59c5fa5, type: 3}
+      name: MiniPekka
+      icon: {fileID: 21300000, guid: 84fc9a222e96a114aaa49df850fd4286, type: 3}
       cost: 4
-      prefab: {fileID: 1183876963644688050, guid: 7797a4f0262bfd54e82750663cf3be1f, type: 3}
+      prefab: {fileID: 4596061905169150917, guid: aa2202a82e1d274418555e7d494a8da3, type: 3}
     - index: 0
       name: Barbaro
-      icon: {fileID: 21300000, guid: afb9ed02c0018df488853864d59c5fa5, type: 3}
+      icon: {fileID: 21300000, guid: 84fc9a222e96a114aaa49df850fd4286, type: 3}
       cost: 4
-      prefab: {fileID: 1183876963644688050, guid: 7797a4f0262bfd54e82750663cf3be1f, type: 3}
+      prefab: {fileID: 4596061905169150917, guid: aa2202a82e1d274418555e7d494a8da3, type: 3}
     - index: 0
       name: Barbaro
       icon: {fileID: 21300000, guid: afb9ed02c0018df488853864d59c5fa5, type: 3}

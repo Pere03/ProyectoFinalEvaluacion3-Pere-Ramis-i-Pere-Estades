@@ -204,7 +204,7 @@ MonoBehaviour:
     maxHealth: 700
     range: 0.5
     baseDamage: 250
-    attackDelay: 1
+    attackDelay: 1.2
     currAttackDelay: 0
     moveSpeed: 18
     healthBar: {fileID: 3774441983015149700}
