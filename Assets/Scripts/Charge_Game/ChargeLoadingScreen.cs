@@ -7,6 +7,6 @@ public class ChargeLoadingScreen : MonoBehaviour
 {
    public void CargarPantalla()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(2);
     }
 }

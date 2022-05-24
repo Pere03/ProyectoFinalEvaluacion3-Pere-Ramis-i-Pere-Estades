@@ -75,6 +75,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         if(go != null)
         {
             SpawnUnit();
+
         }
 
         playerInfo.OnDragging = false;
@@ -94,6 +95,11 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
             }
             Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        
     }
 
     private void Update()

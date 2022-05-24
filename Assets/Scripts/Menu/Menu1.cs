@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class Menu : MonoBehaviour
+public class Menu1 : MonoBehaviour
 {
     //public TextMeshProUGUI loadingText;
     public Text loadingText;
@@ -26,7 +26,7 @@ public class Menu : MonoBehaviour
 
         if (slider.value == 1)
         {
-            SceneManager.LoadSceneAsync(3);
+            SceneManager.LoadSceneAsync(1);
         }
     }
 

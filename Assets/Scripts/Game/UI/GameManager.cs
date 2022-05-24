@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,20 +22,13 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI temporizador;
     public float timeValue = 180;
 
-    public static GameManager sharedInstance;
-
-    public TextMeshProUGUI username;
+    public AudioSource AudioSource1;
+    public AudioSource AudioSource2;
+    public AudioClip AuWin;
+    public AudioClip AuLose;
 
     private void Awake()
     {
-            if (sharedInstance == null)
-            {
-                sharedInstance = this;
-            }
-            else
-            {
-                Destroy(this);
-            }
         
         if (instance != this)
             instance = this;
@@ -42,12 +36,13 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        ApplyUserOptions();
+        AudioSource1 = Camera.main.GetComponent<AudioSource>();
+        AudioSource2 = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        Spawn();
+        //Spawn();
 
         TowersAllie = FindObjectsOfType<TorresAllie>().Length;
         TowersEnemy = FindObjectsOfType<TorresEnemy>().Length;
@@ -65,6 +60,27 @@ public class GameManager : MonoBehaviour
         }
 
         DisplayTime(timeValue);
+
+        if (timeValue == 0 && TowersAllie > TowersEnemy)
+        {
+            SceneManager.LoadSceneAsync(5);
+        } else
+        {
+            if (timeValue == 0 && TowersAllie < TowersEnemy)
+            {
+                SceneManager.LoadSceneAsync(4);
+            }
+        }
+
+        if (TowersEnemy <= 0)
+        {
+            SceneManager.LoadSceneAsync(5);
+        }
+
+        if (TowersAllie <= 0)
+        {
+            SceneManager.LoadSceneAsync(4);
+        }
     }
 
     void DisplayTime(float timeToDisplay)
@@ -79,11 +95,6 @@ public class GameManager : MonoBehaviour
         float milliseconds = timeToDisplay % 1 * 1000;
 
         temporizador.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-    }
-
-    public void ApplyUserOptions()
-    {
-        username.text = DataPersistence.sharedInstance.saveName;
     }
 
     public static List<GameObject> GetAllEnemies(Vector3 pos, List<GameObject> objects, string tag, float range)
@@ -132,11 +143,16 @@ public class GameManager : MonoBehaviour
         Instance.Objects.Remove(go);
     }
 
+    public void Menu()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
+
     public static void AddObject(GameObject go)
     {
         Instance.Objects.Add(go);
     }
-
+    /*
     public void Spawn()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -144,6 +160,5 @@ public class GameManager : MonoBehaviour
             Instantiate(Prefab, new Vector3(9,0,5), transform.rotation);
         }
     }
-
-
+    */
 }

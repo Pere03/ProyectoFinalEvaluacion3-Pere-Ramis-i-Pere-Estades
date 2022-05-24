@@ -23,6 +23,8 @@ public class BaseStats
 	[SerializeField]
 	private Image healthBar;
 	[SerializeField]
+	private AudioClip clip;
+	[SerializeField]
 	private SphereCollider detectionObject;
 	[SerializeField]
 	private GameConstants.OBJECT_TYPE objectType;
@@ -76,6 +78,11 @@ public class BaseStats
 	public Image HealthBar
 	{
 		get { return healthBar; }
+	}
+
+	public AudioClip Clip
+	{
+		get { return clip; }
 	}
 	public SphereCollider DetectionObject
 	{
