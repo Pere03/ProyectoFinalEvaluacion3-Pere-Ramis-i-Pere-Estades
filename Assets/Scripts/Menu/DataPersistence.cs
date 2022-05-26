@@ -7,6 +7,7 @@ public class DataPersistence : MonoBehaviour
     public static DataPersistence sharedInstance;
 
     public string saveName;
+    public int Copas;
 
 
     private void Awake()
@@ -25,5 +26,6 @@ public class DataPersistence : MonoBehaviour
     public void Data()
     {
         PlayerPrefs.SetString("NOMBRE", saveName);
+        PlayerPrefs.SetInt("COPAS", Copas);
     }
 }

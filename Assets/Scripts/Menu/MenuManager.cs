@@ -15,6 +15,9 @@ public class MenuManager : MonoBehaviour
     public GameObject ReyDuende_Menu;
 
     public TMP_InputField loadedName;
+    public TextMeshProUGUI Nombre;
+    public int copas;
+    public TextMeshProUGUI CopasTXT;
 
     void Start()
     {
@@ -33,15 +36,28 @@ public class MenuManager : MonoBehaviour
     public void SaveUserOptions()
     {
         DataPersistence.sharedInstance.saveName = loadedName.text;
+        DataPersistence.sharedInstance.Copas = copas;
         DataPersistence.sharedInstance.Data();
+    }
+
+    private void Update()
+    {
+        
     }
 
     public void LoadUserOptions()
     {
         loadedName.text = PlayerPrefs.GetString("NOMBRE");
+        Nombre.text = loadedName.text;
+        copas = PlayerPrefs.GetInt("COPAS");
+        CopasTXT.text = copas.ToString();
     }
 
-        public void Rey_Barbaro()
+    public void ApplyUserOptions()
+    {
+        Nombre.text = loadedName.text;
+    }
+    public void Rey_Barbaro()
     {
         ReyBarbaro_Menu.SetActive(true);
     }

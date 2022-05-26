@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
 
-public class Lose : MonoBehaviour
+public class Win : MonoBehaviour
 {
 
+    public GameObject wLose;
     public AudioSource AudioSource1;
     public AudioClip AuLose;
-    public static Lose sharedInstance;
+    public static Win sharedInstance;
+    public TextMeshProUGUI CopasGanadas;
     public TextMeshProUGUI username;
-    public TextMeshProUGUI CopasPerdidas;
     public int copas;
-    public int copasPerdidas;
 
     private void Awake()
     {
@@ -34,7 +34,7 @@ public class Lose : MonoBehaviour
         AudioSource1.PlayOneShot(AuLose);
         ApplyUserOptions();
         copas = Random.Range(25, 31);
-        CopasPerdidas.text = "-" + copas;
+        CopasGanadas.text = "+" + copas;
     }
     public void Menu()
     {
@@ -43,7 +43,7 @@ public class Lose : MonoBehaviour
 
     public void SaveUserOptions()
     {
-        DataPersistence.sharedInstance.Copas -= copas;
+        DataPersistence.sharedInstance.Copas += copas;
         DataPersistence.sharedInstance.Data();
     }
 
@@ -51,4 +51,5 @@ public class Lose : MonoBehaviour
     {
         username.text = DataPersistence.sharedInstance.saveName;
     }
+
 }

@@ -56,7 +56,8 @@ public class Unit : MonoBehaviour, IDamageable
 		List<GameObject> objects = GameManager.Instance.Objects;
 		objects = GameManager.GetAllEnemies(transform.position, objects, gameObject.tag);
 		target = GameFunctions.GetNearestTarget(objects, stats.DetectionObject, gameObject.tag);
-    }
+		GameManager.AddObject(gameObject);
+	}
 
     private void Update()
 	{
