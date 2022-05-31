@@ -42,6 +42,21 @@ public class PlayerStats : MonoBehaviour
     [SerializeField]
     private Transform unitTransform;
 
+    [SerializeField]
+    private bool spawnZone;
+
+    [SerializeField]
+    private GameObject rightArea;
+
+    [SerializeField]
+    private GameObject leftArea;
+
+    [SerializeField]
+    private bool rightZone;
+
+    [SerializeField]
+    private bool leftZone;
+
 
     public Transform UnitTransform
     {
@@ -106,6 +121,40 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    public bool SpawnZone
+    {
+        get { return spawnZone; }
+        set { spawnZone = value; }
+    }
+
+    public GameObject RightArea
+    {
+        get { return rightArea; }
+        set { rightArea = value; }
+    }
+    public GameObject LeftArea
+    {
+        get { return leftArea; }
+        set { leftArea = value; }
+    }
+
+    public bool RightZone
+    {
+        get { return rightZone; }
+        set { rightZone = value; }
+    }
+
+    public bool LeftZone
+    {
+        get { return leftZone; }
+        set { leftZone = value; }
+    }
+    public Transform HandParent
+    {
+        get { return handParent; }
+        set { HandParent = value; }
+    }
+
     private void Start()
     {
         playersDeck.Start();
@@ -118,6 +167,17 @@ public class PlayerStats : MonoBehaviour
         {
             resources[GetCurrResource].fillAmount = currResource - GetCurrResource;
             currResource += Time.deltaTime * GameConstants.RESOURCE_SPEED;
+        }
+
+        if (spawnZone)
+        {
+            leftArea.SetActive(!leftZone ? true : false);
+            rightArea.SetActive(!rightZone ? true : false);
+        } 
+        else
+        {
+            leftArea.SetActive(false);
+            rightArea.SetActive(false);
         }
 
         UpdateText();

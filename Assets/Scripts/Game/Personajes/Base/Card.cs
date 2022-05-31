@@ -54,7 +54,9 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         {
             if (canDrag)
             {
+                GetComponent<CanvasGroup>().blocksRaycasts = false;
                 playerInfo.OnDragging = true;
+                playerInfo.SpawnZone = true;
                 transform.SetParent(GameFunctions.GetCanvas());
             }
         }
@@ -74,11 +76,23 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
         if(go != null)
         {
+            if (go == playerInfo.LeftArea && playerInfo.LeftZone)
+            {
+                SpawnUnit();
+            }
+            else if (go == playerInfo.RightArea && playerInfo.RightZone)
+            {
+                SpawnUnit();
+            }
+        } else
+        {
             SpawnUnit();
-
         }
 
+        transform.SetParent(playerInfo.HandParent);
         playerInfo.OnDragging = false;
+        playerInfo.SpawnZone = false;
+        GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 
     private void SpawnUnit()

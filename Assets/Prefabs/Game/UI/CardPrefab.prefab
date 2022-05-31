@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3374637687881606063}
   - component: {fileID: 24322869537127540}
   - component: {fileID: 3421688445347552183}
-  - component: {fileID: 4166818852406540118}
+  - component: {fileID: 1372308748835569735}
   m_Layer: 0
   m_Name: CardPrefab
   m_TagString: Untagged
@@ -74,36 +74,19 @@ MonoBehaviour:
   cardName: {fileID: 1446336339415796290}
   cost: {fileID: 4613123285307136832}
   canDrag: 1
---- !u!114 &4166818852406540118
-MonoBehaviour:
+  posicion: {x: 0, y: 0, z: 0}
+--- !u!225 &1372308748835569735
+CanvasGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485871379269629979}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2315117973089242638
 GameObject:
   m_ObjectHideFlags: 0

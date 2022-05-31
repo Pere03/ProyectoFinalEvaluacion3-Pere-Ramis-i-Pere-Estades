@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
 
         if (TowersEnemy <= 0)
         {
-            SceneManager.LoadSceneAsync(5);
+           SceneManager.LoadSceneAsync(5);
         }
 
         if (TowersAllie <= 0)
