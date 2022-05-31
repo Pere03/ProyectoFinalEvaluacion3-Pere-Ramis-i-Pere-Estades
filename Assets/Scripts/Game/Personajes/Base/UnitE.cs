@@ -17,8 +17,15 @@ public class UnitE : MonoBehaviour, IDamageable
 	[SerializeField]
 	private List<GameObject> hitTargets;
 
+
 	public Animator animator;
 	public Actor3D UnitModel { get { return unitModel; } }
+
+	public AudioSource Audios;
+	public AudioClip AuSpawn;
+	public AudioClip AuAttack;
+	public AudioClip AuWalk;
+
 	public GameObject Target
 	{
 		get { return target; }
@@ -36,25 +43,30 @@ public class UnitE : MonoBehaviour, IDamageable
 
 	private void Awake()
 	{
+
 		agent = GetComponent<NavMeshAgent>();
 	}
 
-    private void Start()
-    {
+	private void Start()
+	{
+		Audios = GetComponent<AudioSource>();
+		Audios.PlayOneShot(AuSpawn);
+		//Audios.PlayOneShot()
 		animator = GetComponent<Animator>();
 		List<GameObject> objects = GameManager.Instance.Objects;
 		objects = GameManager.GetAllEnemies(transform.position, objects, gameObject.tag);
 		target = GameFunctions.GetNearestTarget(objects, stats.DetectionObject, gameObject.tag);
-    }
+		GameManager.AddObject(gameObject);
+	}
 
-    private void Update()
+	private void Update()
 	{
 		if (stats.CurrHealth > 0)
 		{
 			Agent.speed = stats.MoveSpeed;
 			stats.UpdateStats();
 			Attack();
-			
+
 			if (target != null)
 			{
 				agent.SetDestination(target.transform.position);
@@ -75,26 +87,28 @@ public class UnitE : MonoBehaviour, IDamageable
 			{
 				Component damageable = target.GetComponent(typeof(IDamageable));
 
-				if (damageable) 
+				if (damageable)
 				{
+					animator.SetBool("isPunching", false);
+					Audios.loop = false;
+
 					if (hitTargets.Contains(target))
 					{
-						if(GameFunctions.CanAttack(gameObject.tag, target.tag, damageable, stats))
+						if (GameFunctions.CanAttack(gameObject.tag, target.tag, damageable, stats))
 						{
 							animator.SetBool("isPunching", true);
+							Audios.loop = true;
+							Audios.PlayOneShot(AuAttack);
 							GameFunctions.Attack(damageable, stats.BaseDamage);
 							stats.CurrAttackDelay = 0;
 						}
-						
 					}
 				}
-				else
-				{
-					animator.SetBool("isPunching", false);
-				}
+
 			}
-		} else
-        {
+		}
+		else
+		{
 			List<GameObject> objects = GameManager.Instance.Objects;
 			objects = GameManager.GetAllEnemies(transform.position, objects, gameObject.tag);
 			target = GameFunctions.GetNearestTarget(objects, stats.DetectionObject, gameObject.tag);

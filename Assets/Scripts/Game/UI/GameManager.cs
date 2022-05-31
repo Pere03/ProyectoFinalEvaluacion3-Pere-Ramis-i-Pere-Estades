@@ -27,6 +27,15 @@ public class GameManager : MonoBehaviour
     public AudioClip AuWin;
     public AudioClip AuLose;
 
+    public GameObject TorreR_E;
+    public GameObject TorreR_A;
+
+    public GameObject TorreD_E;
+    public GameObject TorreD_A;
+
+    public GameObject TorreI_E;
+    public GameObject TorreI_A;
+
     private void Awake()
     {
         
