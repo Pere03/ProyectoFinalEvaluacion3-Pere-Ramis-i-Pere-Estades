@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     public GameObject TorreI_E;
     public GameObject TorreI_A;
 
+
     private void Awake()
     {
         
@@ -89,6 +90,11 @@ public class GameManager : MonoBehaviour
         if (TowersAllie <= 0)
         {
             SceneManager.LoadSceneAsync(4);
+        }
+
+        if ( TorreD_A = null)
+        {
+
         }
     }
 

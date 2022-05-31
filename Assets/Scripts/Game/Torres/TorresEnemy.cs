@@ -10,6 +10,8 @@ public class TorresEnemy : MonoBehaviour, IDamageable
     private List<GameObject> hitTargets;
     [SerializeField]
     private GameObject target;
+    public ParticleSystem ExplosionParticleSystem;
+    public GameObject Barra;
 
     public BaseStats Stats 
     { 
@@ -60,6 +62,10 @@ public class TorresEnemy : MonoBehaviour, IDamageable
         {
             print(gameObject.name + "Se ha matao!");
             GameManager.RemoveObjectsFromList(gameObject);
+            Vector3 offset = new Vector3(0, 0, 0);
+            var inst = Instantiate(ExplosionParticleSystem, transform.position + offset, ExplosionParticleSystem.transform.rotation);
+            inst.Play();
+            Destroy(Barra);
             Destroy(gameObject);
         }
     }

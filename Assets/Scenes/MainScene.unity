@@ -304,6 +304,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7396649385128178867, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
+      propertyPath: Barra
+      value: 
+      objectReference: {fileID: 6355262630993479727}
+    - target: {fileID: 7396649385128178867, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
       propertyPath: stats.range
       value: 0.6
       objectReference: {fileID: 0}
@@ -315,6 +319,10 @@ PrefabInstance:
       propertyPath: stats.baseDamage
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 7396649385128178867, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
+      propertyPath: ExplosionParticleSystem
+      value: 
+      objectReference: {fileID: 3384174491066772136, guid: 5d688fe88b0e0ce4f8c5ba4bdca625eb, type: 3}
     - target: {fileID: 7396649385426063460, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -398,12 +406,12 @@ MonoBehaviour:
   AudioSource2: {fileID: 74164215}
   AuWin: {fileID: 8300000, guid: 436cee3646ccd984e97f41c9f5b08e35, type: 3}
   AuLose: {fileID: 8300000, guid: 4ce9491811958714789c98a7aa70d8a9, type: 3}
-  TorreR_E: {fileID: 0}
-  TorreR_A: {fileID: 0}
-  TorreD_E: {fileID: 0}
-  TorreD_A: {fileID: 0}
-  TorreI_E: {fileID: 0}
-  TorreI_A: {fileID: 0}
+  TorreR_E: {fileID: 2140907488}
+  TorreR_A: {fileID: 2011068049}
+  TorreD_E: {fileID: 317779649}
+  TorreD_A: {fileID: 1352484936}
+  TorreI_E: {fileID: 1801065263}
+  TorreI_A: {fileID: 2064642654}
 --- !u!114 &74164214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +811,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 446962402}
     m_Modifications:
     - target: {fileID: -1249241807277878071, guid: 759792b35c773694486ff09515974195, type: 3}
+      propertyPath: Barra
+      value: 
+      objectReference: {fileID: 1937260213}
+    - target: {fileID: -1249241807277878071, guid: 759792b35c773694486ff09515974195, type: 3}
       propertyPath: stats.range
       value: 0.6
       objectReference: {fileID: 0}
@@ -830,6 +842,10 @@ PrefabInstance:
       propertyPath: stats.detectionObject
       value: 
       objectReference: {fileID: 2026241433}
+    - target: {fileID: -1249241807277878071, guid: 759792b35c773694486ff09515974195, type: 3}
+      propertyPath: ExplosionParticleSystem
+      value: 
+      objectReference: {fileID: 3384174491066772136, guid: 5d688fe88b0e0ce4f8c5ba4bdca625eb, type: 3}
     - target: {fileID: 3496829751951346545, guid: 759792b35c773694486ff09515974195, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1353,7 +1369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &395746017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2825,6 +2841,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7396649385128178867, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
+      propertyPath: Barra
+      value: 
+      objectReference: {fileID: 6839550486982612554}
+    - target: {fileID: 7396649385128178867, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
       propertyPath: stats.range
       value: 0.6
       objectReference: {fileID: 0}
@@ -2836,6 +2856,10 @@ PrefabInstance:
       propertyPath: stats.baseDamage
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 7396649385128178867, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
+      propertyPath: ExplosionParticleSystem
+      value: 
+      objectReference: {fileID: 3384174491066772136, guid: 5d688fe88b0e0ce4f8c5ba4bdca625eb, type: 3}
     - target: {fileID: 7396649385426063460, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3772,6 +3796,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 446962402}
     m_Modifications:
     - target: {fileID: -1249241807277878071, guid: 759792b35c773694486ff09515974195, type: 3}
+      propertyPath: Barra
+      value: 
+      objectReference: {fileID: 935644030}
+    - target: {fileID: -1249241807277878071, guid: 759792b35c773694486ff09515974195, type: 3}
       propertyPath: stats.range
       value: 0.6
       objectReference: {fileID: 0}
@@ -3799,6 +3827,10 @@ PrefabInstance:
       propertyPath: stats.detectionObject
       value: 
       objectReference: {fileID: 928052324}
+    - target: {fileID: -1249241807277878071, guid: 759792b35c773694486ff09515974195, type: 3}
+      propertyPath: ExplosionParticleSystem
+      value: 
+      objectReference: {fileID: 3384174491066772136, guid: 5d688fe88b0e0ce4f8c5ba4bdca625eb, type: 3}
     - target: {fileID: 3496829751951346545, guid: 759792b35c773694486ff09515974195, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3987,6 +4019,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7396649385128178867, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
+      propertyPath: Barra
+      value: 
+      objectReference: {fileID: 995756564379549158}
+    - target: {fileID: 7396649385128178867, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
       propertyPath: stats.range
       value: 0.6
       objectReference: {fileID: 0}
@@ -3998,6 +4034,10 @@ PrefabInstance:
       propertyPath: stats.baseDamage
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 7396649385128178867, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
+      propertyPath: ExplosionParticleSystem
+      value: 
+      objectReference: {fileID: 3384174491066772136, guid: 5d688fe88b0e0ce4f8c5ba4bdca625eb, type: 3}
     - target: {fileID: 7396649385426063460, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4061,6 +4101,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 446962402}
     m_Modifications:
     - target: {fileID: -1249241807277878071, guid: 759792b35c773694486ff09515974195, type: 3}
+      propertyPath: Barra
+      value: 
+      objectReference: {fileID: 116940303}
+    - target: {fileID: -1249241807277878071, guid: 759792b35c773694486ff09515974195, type: 3}
       propertyPath: stats.range
       value: 0.6
       objectReference: {fileID: 0}
@@ -4088,6 +4132,10 @@ PrefabInstance:
       propertyPath: stats.detectionObject
       value: 
       objectReference: {fileID: 76135620}
+    - target: {fileID: -1249241807277878071, guid: 759792b35c773694486ff09515974195, type: 3}
+      propertyPath: ExplosionParticleSystem
+      value: 
+      objectReference: {fileID: 3384174491066772136, guid: 5d688fe88b0e0ce4f8c5ba4bdca625eb, type: 3}
     - target: {fileID: 3496829751951346545, guid: 759792b35c773694486ff09515974195, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
