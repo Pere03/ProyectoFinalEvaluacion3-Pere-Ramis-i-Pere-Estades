@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 0078a3567739b0740a4f70603b23b09b
+  - enabled: 1
+    path: Assets/Scenes/Empate.unity
+    guid: 5b87228bfb1186542b05574fb7bcb8f4
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

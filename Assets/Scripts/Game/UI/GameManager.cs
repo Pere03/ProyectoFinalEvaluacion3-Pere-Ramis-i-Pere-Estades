@@ -92,9 +92,9 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadSceneAsync(4);
         }
 
-        if ( TorreD_A = null)
+        if (timeValue == 0 && TowersAllie == TowersEnemy)
         {
-
+           SceneManager.LoadSceneAsync(6);
         }
     }
 
