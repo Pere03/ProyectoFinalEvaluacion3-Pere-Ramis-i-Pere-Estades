@@ -2227,7 +2227,6 @@ MonoBehaviour:
   - {fileID: 2064642654}
   - {fileID: 1801065263}
   - {fileID: 317779649}
-  - {fileID: 0}
   Prefab: {fileID: 6848224938866848462, guid: cfccea8b55ab0e14a9183c9175ac83b9, type: 3}
   CoronasAllie: {fileID: 1876232533}
   CoronasEnemy: {fileID: 1932464230}
@@ -5508,44 +5507,44 @@ MonoBehaviour:
     cards:
     - index: 0
       name: Pekka
-      icon: {fileID: 21300000, guid: 42723a07ecd281544ac207df5bd979f6, type: 3}
+      icon: {fileID: 21300000, guid: 67e8a7f2a032ac649922bdaa7b309e88, type: 3}
       cost: 4
-      prefab: {fileID: 9165115707134438024, guid: a6e38664f7397af409717ff3c481c40f, type: 3}
+      prefab: {fileID: 6500076931942736797, guid: f852879dc26d6eb46bd478ee1a5c957f, type: 3}
+    - index: 0
+      name: Pekka
+      icon: {fileID: 21300000, guid: 6bef32edd1c4aa448ade5b6dea18f74b, type: 3}
+      cost: 5
+      prefab: {fileID: 6124647944213747470, guid: 3c9593fb3321dd7428f5e417e5114d8d, type: 3}
+    - index: 0
+      name: Pekka
+      icon: {fileID: 21300000, guid: f2fe714632cba034fbf3466b236c10fb, type: 3}
+      cost: 5
+      prefab: {fileID: 1183876963644688050, guid: 7797a4f0262bfd54e82750663cf3be1f, type: 3}
     - index: 0
       name: Pekka
       icon: {fileID: 21300000, guid: 42723a07ecd281544ac207df5bd979f6, type: 3}
-      cost: 4
-      prefab: {fileID: 9165115707134438024, guid: a6e38664f7397af409717ff3c481c40f, type: 3}
+      cost: 7
+      prefab: {fileID: 919386993691070116, guid: 2461100bc41e29e4bb34bd4a50dcacec, type: 3}
     - index: 0
       name: Pekka
-      icon: {fileID: 21300000, guid: 42723a07ecd281544ac207df5bd979f6, type: 3}
+      icon: {fileID: 21300000, guid: 84fc9a222e96a114aaa49df850fd4286, type: 3}
       cost: 4
-      prefab: {fileID: 9165115707134438024, guid: a6e38664f7397af409717ff3c481c40f, type: 3}
+      prefab: {fileID: 4596061905169150917, guid: aa2202a82e1d274418555e7d494a8da3, type: 3}
     - index: 0
       name: Pekka
-      icon: {fileID: 21300000, guid: 42723a07ecd281544ac207df5bd979f6, type: 3}
+      icon: {fileID: 21300000, guid: 84fc9a222e96a114aaa49df850fd4286, type: 3}
       cost: 4
-      prefab: {fileID: 9165115707134438024, guid: a6e38664f7397af409717ff3c481c40f, type: 3}
+      prefab: {fileID: 4596061905169150917, guid: aa2202a82e1d274418555e7d494a8da3, type: 3}
     - index: 0
       name: Pekka
-      icon: {fileID: 21300000, guid: 42723a07ecd281544ac207df5bd979f6, type: 3}
+      icon: {fileID: 21300000, guid: 84fc9a222e96a114aaa49df850fd4286, type: 3}
       cost: 4
-      prefab: {fileID: 9165115707134438024, guid: a6e38664f7397af409717ff3c481c40f, type: 3}
+      prefab: {fileID: 4596061905169150917, guid: aa2202a82e1d274418555e7d494a8da3, type: 3}
     - index: 0
       name: Pekka
-      icon: {fileID: 21300000, guid: 42723a07ecd281544ac207df5bd979f6, type: 3}
+      icon: {fileID: 21300000, guid: 84fc9a222e96a114aaa49df850fd4286, type: 3}
       cost: 4
-      prefab: {fileID: 9165115707134438024, guid: a6e38664f7397af409717ff3c481c40f, type: 3}
-    - index: 0
-      name: Pekka
-      icon: {fileID: 21300000, guid: 42723a07ecd281544ac207df5bd979f6, type: 3}
-      cost: 4
-      prefab: {fileID: 9165115707134438024, guid: a6e38664f7397af409717ff3c481c40f, type: 3}
-    - index: 0
-      name: Pekka
-      icon: {fileID: 21300000, guid: 42723a07ecd281544ac207df5bd979f6, type: 3}
-      cost: 4
-      prefab: {fileID: 9165115707134438024, guid: a6e38664f7397af409717ff3c481c40f, type: 3}
+      prefab: {fileID: 4596061905169150917, guid: aa2202a82e1d274418555e7d494a8da3, type: 3}
     hand: []
     nextCard:
       index: 0
@@ -11916,7 +11915,7 @@ GameObject:
   - component: {fileID: 395746017}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11935,6 +11934,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cartas:
   - {fileID: 4596061905169150917, guid: 922d45ada6845dc4fa38cac3e0d724b5, type: 3}
+  - {fileID: 6500076931942736797, guid: 9db732dd794c2b448a6929b3c6be78fe, type: 3}
+  - {fileID: 919386993691070116, guid: 3b41eac1b49b4124f81d8ddde6db1811, type: 3}
+  - {fileID: 1183876963644688050, guid: 3d6a02b53f74f4c46bedcd915d9026f2, type: 3}
+  - {fileID: 6124647944213747470, guid: b10c51d05dc09b646a914495e86327fe, type: 3}
 --- !u!4 &395746018
 Transform:
   m_ObjectHideFlags: 0

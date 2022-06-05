@@ -134,6 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1956296717494066184}
   - component: {fileID: 2066184670476462671}
+  - component: {fileID: -3181081617833647068}
   - component: {fileID: 135839210354356366}
   - component: {fileID: 227085794880145692}
   - component: {fileID: 5554437324314206993}
@@ -184,6 +185,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-3181081617833647068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183876963644688050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a217ca6654c1bd4e82d27bbf98f3c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  unitModel: {fileID: 0}
+  target: {fileID: 0}
+  stats:
+    currHealth: 0
+    maxHealth: 0
+    range: 0
+    baseDamage: 0
+    attackDelay: 0
+    currAttackDelay: 0
+    moveSpeed: 0
+    healthBar: {fileID: 0}
+    detectionObject: {fileID: 0}
+    objectType: 0
+    objectAttackable: 0
+  hitTargets: []
+  animator: {fileID: 0}
+  Audios: {fileID: 0}
+  AuSpawn: {fileID: 0}
+  AuAttack: {fileID: 0}
+  AuWalk: {fileID: 0}
 --- !u!114 &135839210354356366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,6 +247,10 @@ MonoBehaviour:
     objectAttackable: 0
   hitTargets: []
   animator: {fileID: 2066184670476462671}
+  Audios: {fileID: 0}
+  AuSpawn: {fileID: 0}
+  AuAttack: {fileID: 0}
+  AuWalk: {fileID: 0}
 --- !u!54 &227085794880145692
 Rigidbody:
   m_ObjectHideFlags: 0
