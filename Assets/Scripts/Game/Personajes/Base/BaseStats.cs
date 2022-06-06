@@ -6,6 +6,8 @@ using UnityEngine.UI;
 [System.Serializable]
 public class BaseStats
 {
+	//Con todo esto creamos todas las variables de las estadisticas de nuestras cartas
+
 	[SerializeField]
 	private float currHealth;
 	[SerializeField]

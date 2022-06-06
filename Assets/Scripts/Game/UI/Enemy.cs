@@ -10,21 +10,13 @@ public class Enemy : MonoBehaviour
         InvokeRepeating("SpawnCard", 5, 10);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public Vector3 RandomSpawnPosition1()
     {
-        //Con esto hacemos que devuelva un valor Vector3, que contiene un valor predeterminado en X y tambien un valor aleatorio en Y entre el 2 y el 14
         return new Vector3(100, 1, -27);
     }
 
     public Vector3 RandomSpawnPosition2()
     {
-        //Con esto hacemos que devuelva un valor Vector3, que contiene un valor predeterminado en X y tambien un valor aleatorio en Y entre el 2 y el 14
         return new Vector3(100, 1, 24);
     }
 
@@ -33,7 +25,7 @@ public class Enemy : MonoBehaviour
         float randomNumber = Random.Range(0, 3);
         int randomIndex = Random.Range(0, Cartas.Length);
 
-        //Si el gameover del player vale false y dependiendo de que numero aleatorio contenga randomNumber, iniciara una de las 2 instanciaciones siguientes
+        //Dependiendo de que numero aleatorio contenga randomNumber, iniciara una de las 2 instanciaciones siguientes
 
         if (randomNumber == 1)
         {

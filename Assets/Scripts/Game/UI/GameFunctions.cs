@@ -9,6 +9,7 @@ public class GameFunctions
         return GameObject.Find(GameConstants.UI_CANVAS).transform;
     }
 
+    //Con esto creamos la funcion de que una unidad o torre pueda atacar
     public static bool CanAttack(string playerTag, string enemyTag, Component damageable, BaseStats stats)
     {
         if (damageable)
@@ -34,6 +35,7 @@ public class GameFunctions
         (damageable as IDamageable).TakeDamage(baseDamage);
     }
 
+    //Con esto creamos la funcion de adquirir los objetivos
     public static GameObject GetNearestTarget(List<GameObject> hitTargets, SphereCollider mySc, string tag, float range)
     {
         if (hitTargets.Count > 0)

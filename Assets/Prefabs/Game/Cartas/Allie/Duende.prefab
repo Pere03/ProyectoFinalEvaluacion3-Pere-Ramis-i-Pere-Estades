@@ -1066,8 +1066,8 @@ MonoBehaviour:
   hitTargets: []
   animator: {fileID: 7661507614031120049}
   Audios: {fileID: 7279432950699528476}
-  AuSpawn: {fileID: 8300000, guid: 329feea74e6169c479b9dd45d0220425, type: 3}
-  AuAttack: {fileID: 8300000, guid: e03a82d76af388e4da23d8e4af7d4ed1, type: 3}
+  AuSpawn: {fileID: 8300000, guid: ad5c1ef00cb3d4d4cba8040b200c32bf, type: 3}
+  AuAttack: {fileID: 8300000, guid: d97083a5aaf19b4469eda4a17100523b, type: 3}
   AuWalk: {fileID: 8300000, guid: 990fce4c01c418945b8350dba2520ccc, type: 3}
 --- !u!114 &2966346934758118381
 MonoBehaviour:

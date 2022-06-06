@@ -6,6 +6,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class PlayerStats : MonoBehaviour
 {       
+    //Con esto creamos todas las variables para hacer la funcion del player, del mazo, las zona enemiga y de la barra de elixir
     [SerializeField]
     private Deck playersDeck;
 
@@ -169,6 +170,7 @@ public class PlayerStats : MonoBehaviour
             currResource += Time.deltaTime * GameConstants.RESOURCE_SPEED;
         }
 
+
         if (spawnZone)
         {
             leftArea.SetActive(!leftZone ? true : false);
@@ -191,6 +193,7 @@ public class PlayerStats : MonoBehaviour
         textScore.text = score.ToString();
     }
     
+    //Esto hace que se actualice en todo momento los valores que le hemos asignado en la carta a nuestro mazo
     void UpdateDeck()
     { 
         if(playersDeck.Hand.Count < GameConstants.MAX_HAND_SIZE)
@@ -208,6 +211,7 @@ public class PlayerStats : MonoBehaviour
 
     public void RemoveResource(int cost)
     {
+        //Esto hace, que si lanzamos una carta al juego, que remueva el coste de elixir de esa carta a la barra de elixir
         currResource -= cost;
         for (int i = 0; i < resources.Count; i++)
         {

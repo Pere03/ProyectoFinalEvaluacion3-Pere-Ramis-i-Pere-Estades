@@ -52,8 +52,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        //Spawn();
-
+        //Con esto cuenta el nº de Torres aliadas y enemigas del campo
         TowersAllie = FindObjectsOfType<TorresAllie>().Length;
         TowersEnemy = FindObjectsOfType<TorresEnemy>().Length;
 
@@ -71,33 +70,39 @@ public class GameManager : MonoBehaviour
 
         DisplayTime(timeValue);
 
+        //Si el tiempo es 0 y el numero de torres aliadas es mayor a las enemigas, pues pasa a la pantalla de victoria
         if (timeValue == 0 && TowersAllie > TowersEnemy)
         {
             SceneManager.LoadSceneAsync(5);
         } else
         {
+            //Si el tiempo es 0 y el numero de torres enemigas es mayor a las aliadas, pues pasa a la pantalla de game over
             if (timeValue == 0 && TowersAllie < TowersEnemy)
             {
                 SceneManager.LoadSceneAsync(4);
             }
         }
 
+        //Si  el numero de torres enemigas es menor o igual a 0 , pues pasa a la pantalla de victoria
         if (TowersEnemy <= 0)
         {
            SceneManager.LoadSceneAsync(5);
         }
 
+        //Si  el numero de torres aliadas es menor o igual a 0 , pues pasa a la pantalla de game over
         if (TowersAllie <= 0)
         {
             SceneManager.LoadSceneAsync(4);
         }
 
+        //Si el tiempo es 0 y el numero de torres enemigas es igual a las aliadas, pues pasa a la pantalla de empate
         if (timeValue == 0 && TowersAllie == TowersEnemy)
         {
            SceneManager.LoadSceneAsync(6);
         }
     }
 
+    //Esto es un temporizador
     void DisplayTime(float timeToDisplay)
     {
         if (timeToDisplay < 0)
@@ -112,6 +117,7 @@ public class GameManager : MonoBehaviour
         temporizador.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
+    //Con esto adquiere una lista de enemigos y los guarda
     public static List<GameObject> GetAllEnemies(Vector3 pos, List<GameObject> objects, string tag, float range)
     {
         List<GameObject> sentObjects = new List<GameObject>();
@@ -167,13 +173,4 @@ public class GameManager : MonoBehaviour
     {
         Instance.Objects.Add(go);
     }
-    /*
-    public void Spawn()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(Prefab, new Vector3(9,0,5), transform.rotation);
-        }
-    }
-    */
 }

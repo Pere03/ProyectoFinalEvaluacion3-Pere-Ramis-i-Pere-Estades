@@ -47,7 +47,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         set { cost = value; }
     }
 
-
+    //Con esto hacemos el principio del drag de nuestra carta
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (!playerInfo.OnDragging)
@@ -62,6 +62,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         }
     }
 
+    //Esto hace que cuando estemos "arrastrando" la carta, siga el movimiento del cursor del raton
     public void OnDrag(PointerEventData eventData)
     {
         if (playerInfo.OnDragging)
@@ -72,6 +73,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        //Esto es la funcion de cuando dejamos la carta en un punto, y lo que hace es Spawnear la Unidad asignada, pero solo en el campo aliado.
         GameObject go = eventData.pointerCurrentRaycast.gameObject;
 
         if(go != null)
@@ -97,6 +99,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     private void SpawnUnit()
     {
+        //Esto hace que segun el punto de la pantalla que hemos seleccionado, instancie nuestra unidad asignada, y a la vez quitando su carta del mazo
         if(playerInfo.GetCurrResource >= cardInfo.Cost)
         {
             playerInfo.PlayersDeck.RemoveHand(cardInfo.Index);
@@ -104,16 +107,10 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit raycastHit))
             {
-                //GameFunctions.SpawnUnit(cardInfo.Prefab, playerInfo.UnitTransform, raycastHit.point);
                 Instantiate(cardInfo.Prefab, raycastHit.point, transform.rotation);
             }
             Destroy(gameObject);
         }
-    }
-
-    private void Start()
-    {
-        
     }
 
     private void Update()

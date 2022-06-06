@@ -7,6 +7,7 @@ public static class GameConstants
     public static int MAX_HAND_SIZE = 4;
     public static string UI_CANVAS = "UI-Canvas";
 
+    //Aqui creamos unas variables para nuestra unidad, para asignar si son terrestres o voladores, o el rango de la unidad
     public enum OBJECT_TYPE
     {
         GROUND,

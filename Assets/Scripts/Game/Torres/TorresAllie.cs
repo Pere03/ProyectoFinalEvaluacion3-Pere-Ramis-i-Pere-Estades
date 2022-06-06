@@ -47,6 +47,7 @@ public class TorresAllie : MonoBehaviour, IDamageable
 
     private void Start()
     {
+        //Aquí hacemos que adquiera la lista de enemigos cerca
         List<GameObject> objects = GameManager.Instance.Objects;
         objects = GameManager.GetAllEnemies(transform.position, objects, gameObject.tag);
         target = GameFunctions.GetNearestTarget(objects, stats.DetectionObject, gameObject.tag);
@@ -54,6 +55,7 @@ public class TorresAllie : MonoBehaviour, IDamageable
 
     void Update()
     {
+        //Esto hace que si su vida es superior a 0 pueda atacar, pero si su vida es inferior a 0, se elimina de la lista de objetos del game manager y se destruye, ademas de instanciar unas particulas de explosion
         if (stats.CurrHealth > 0)
         {
             stats.UpdateStats();
@@ -70,6 +72,7 @@ public class TorresAllie : MonoBehaviour, IDamageable
         }
     }
 
+    //Con esto hacemos la funcion de ataque de nuesta torre, que cuando tenga un objetivo y pueda atacarlo, pues que le empiece a bajar vida
     void Attack()
     {
         if (target != null)
@@ -99,6 +102,7 @@ public class TorresAllie : MonoBehaviour, IDamageable
         }
     }
 
+    //Con esto hacemos saber cuando esta en contacto con un enemigo y que tambien puede atacar
     public void OnTriggerEnter(Collider other)
     {
         if (!other.transform.parent.CompareTag(gameObject.tag))

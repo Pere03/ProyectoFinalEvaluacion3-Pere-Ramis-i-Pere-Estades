@@ -51,8 +51,9 @@ public class UnitE : MonoBehaviour, IDamageable
 	{
 		Audios = GetComponent<AudioSource>();
 		Audios.PlayOneShot(AuSpawn);
-		//Audios.PlayOneShot()
 		animator = GetComponent<Animator>();
+
+		//Aquí hacemos que se añada la unidad en la lista del game manager, y que adquiera la lista de enemigos cerca
 		List<GameObject> objects = GameManager.Instance.Objects;
 		objects = GameManager.GetAllEnemies(transform.position, objects, gameObject.tag);
 		target = GameFunctions.GetNearestTarget(objects, stats.DetectionObject, gameObject.tag);
@@ -61,6 +62,7 @@ public class UnitE : MonoBehaviour, IDamageable
 
 	private void Update()
 	{
+		//Esto hace que si su vida es superior a 0, que se dirija hacia el enemigo mas cercano, pero si su vida es inferior a 0, se elimina de la lista de objetos del game manager y se destruye
 		if (stats.CurrHealth > 0)
 		{
 			Agent.speed = stats.MoveSpeed;
@@ -78,7 +80,7 @@ public class UnitE : MonoBehaviour, IDamageable
 			Destroy(gameObject);
 		}
 	}
-
+	//Con esto hacemos la funcion de ataque de nuesta unidad, que cuando tenga un objetivo y pueda atacarlo, pues que le empiece a bajar vida
 	void Attack()
 	{
 		if (target != null)
@@ -115,6 +117,7 @@ public class UnitE : MonoBehaviour, IDamageable
 		}
 	}
 
+	//Con esto hacemos saber cuando esta en contacto con un enemigo y que tambien puede atacar
 	public void OnTriggerEnter(Collider other)
 	{
 		if (!other.transform.parent.CompareTag(gameObject.tag))

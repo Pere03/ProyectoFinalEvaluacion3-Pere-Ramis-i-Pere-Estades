@@ -37,6 +37,7 @@ public class Emotes : MonoBehaviour
         EmotesMenu.SetActive(true);
     }
 
+    //Con esto hacemos que aparezca un emoticono, y vuelve al menu inicial de los emoticonos
     public void EmotesJiJiJiJa()
     {
         GameObject newEmote = Instantiate(JiJiJiJa, new Vector3(726, -222, 0), transform.rotation) as GameObject;
@@ -45,6 +46,7 @@ public class Emotes : MonoBehaviour
         EmotesOne.SetActive(true);
     }
 
+    //Con esto hacemos que aparezca un emoticono, y vuelve al menu inicial de los emoticonos
     public void EmotesGrrr()
     {
         GameObject newEmote1 = Instantiate(Grrrr, new Vector3(726, -222, 0), transform.rotation) as GameObject;
@@ -53,6 +55,7 @@ public class Emotes : MonoBehaviour
         EmotesOne.SetActive(true);
     }
 
+    //Con esto hacemos que aparezca un emoticono, y vuelve al menu inicial de los emoticonos
     public void EmotesLloros()
     {
         GameObject newEmote2 = Instantiate(Lloros, new Vector3(726, -222, 0), transform.rotation) as GameObject;
@@ -61,6 +64,7 @@ public class Emotes : MonoBehaviour
         EmotesOne.SetActive(true);
     }
 
+    //Con esto hacemos que aparezca un emoticono, y vuelve al menu inicial de los emoticonos
     public void EmotesTaBien()
     {
         GameObject newEmote3 = Instantiate(TaBien, new Vector3(726, -222, 0), transform.rotation) as GameObject;

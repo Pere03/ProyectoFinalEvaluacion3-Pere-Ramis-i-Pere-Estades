@@ -14,6 +14,7 @@ public class Emote : MonoBehaviour
     
     void Update()
     {
+        //Esto es una cuenta atras para cuando lancemos un emoticono, que hará que se destruia
         currentTime -= 1 * Time.deltaTime;
         if ( currentTime <= 0)
         {

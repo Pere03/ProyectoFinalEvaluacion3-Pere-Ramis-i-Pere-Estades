@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class CardStats
 {
+    //Con esto asignamos las bases de nuestra carta, su nombre, imagen, coste y la unidad a instanciar
     [SerializeField]
     private int index;
 
