@@ -1852,6 +1852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rey_E
       objectReference: {fileID: 0}
+    - target: {fileID: 7396649385128178829, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7396649385128178864, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1947,6 +1951,10 @@ PrefabInstance:
     - target: {fileID: 7396649385426063461, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396649386074022191, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
@@ -7922,6 +7930,10 @@ PrefabInstance:
     - target: {fileID: 7396649385128178829, guid: 759792b35c773694486ff09515974195, type: 3}
       propertyPath: m_Name
       value: Rey_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396649385128178829, guid: 759792b35c773694486ff09515974195, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7396649385128178864, guid: 759792b35c773694486ff09515974195, type: 3}
       propertyPath: m_RootOrder
@@ -33678,6 +33690,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7396649386074022191, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
 --- !u!1001 &1168484731
@@ -39621,6 +39637,10 @@ PrefabInstance:
     - target: {fileID: 7396649385426063461, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396649386074022191, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c75d2ed0278db6345a1d4835fc676c94, type: 3}
