@@ -1008,7 +1008,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1,2 sec
+  m_text: 0,8 sec
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
   m_sharedMaterial: {fileID: 9090189279786941488, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
@@ -3501,7 +3501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Comun
+  m_text: Campeon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
   m_sharedMaterial: {fileID: 9090189279786941488, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
@@ -5054,7 +5054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 12499c29d5ecd6243b668898d4b2e746, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a69c0f56bf92114ba03223a873f8f3c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5399,7 +5399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Duendes (Nivel 14)
+  m_text: 'Ninjas (Nivel 14) '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
   m_sharedMaterial: {fileID: 9090189279786941488, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
@@ -7369,7 +7369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Media
+  m_text: Alta
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
   m_sharedMaterial: {fileID: 9090189279786941488, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
@@ -13460,7 +13460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1035
+  m_text: 1400
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
   m_sharedMaterial: {fileID: 9090189279786941488, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
@@ -15851,7 +15851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Duendes (Nivel 14)
+  m_text: Ninjas (Nivel 14)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
   m_sharedMaterial: {fileID: 9090189279786941488, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
@@ -22060,7 +22060,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 300
+  m_text: '250
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
   m_sharedMaterial: {fileID: 9090189279786941488, guid: 7152af9b6d324e44e84564be68feea95, type: 2}
@@ -31440,7 +31442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5686275, g: 0.5764706, b: 0.5803922, a: 1}
+  m_Color: {r: 0.75294125, g: 0.0627451, b: 0.08627451, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -41303,7 +41305,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7021806214587952401}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016832767}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: ReyDuende
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2902381388447515143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42781,7 +42795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: afb9ed02c0018df488853864d59c5fa5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a69c0f56bf92114ba03223a873f8f3c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

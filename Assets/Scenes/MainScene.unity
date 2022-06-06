@@ -5509,7 +5509,7 @@ MonoBehaviour:
       name: Peepo
       icon: {fileID: 21300000, guid: 67e8a7f2a032ac649922bdaa7b309e88, type: 3}
       cost: 4
-      prefab: {fileID: 6751112041986980972, guid: c7882a36839ea7445be7fec45e731971, type: 3}
+      prefab: {fileID: 6500076931942736797, guid: f852879dc26d6eb46bd478ee1a5c957f, type: 3}
     - index: 0
       name: Ejercito
       icon: {fileID: 21300000, guid: 6bef32edd1c4aa448ade5b6dea18f74b, type: 3}
@@ -5536,10 +5536,10 @@ MonoBehaviour:
       cost: 3
       prefab: {fileID: 6071053668955471020, guid: f78abfd0b95e8514787f98f877e1a4c3, type: 3}
     - index: 0
-      name: MiniPekka
-      icon: {fileID: 21300000, guid: 84fc9a222e96a114aaa49df850fd4286, type: 3}
-      cost: 4
-      prefab: {fileID: 4596061905169150917, guid: aa2202a82e1d274418555e7d494a8da3, type: 3}
+      name: Ninjas
+      icon: {fileID: 21300000, guid: 7a69c0f56bf92114ba03223a873f8f3c, type: 3}
+      cost: 9
+      prefab: {fileID: 5130687609255571247, guid: 6b141a69854fa7b4c915ddabcd064e43, type: 3}
     - index: 0
       name: Pekka
       icon: {fileID: 21300000, guid: 84fc9a222e96a114aaa49df850fd4286, type: 3}
