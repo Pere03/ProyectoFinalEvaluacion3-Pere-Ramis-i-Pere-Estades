@@ -870,7 +870,7 @@ MonoBehaviour:
     baseDamage: 108
     attackDelay: 1
     currAttackDelay: 0
-    moveSpeed: 0
+    moveSpeed: 18
     healthBar: {fileID: 8332667856954842396}
     detectionObject: {fileID: 5993826184627324041}
     objectType: 0
