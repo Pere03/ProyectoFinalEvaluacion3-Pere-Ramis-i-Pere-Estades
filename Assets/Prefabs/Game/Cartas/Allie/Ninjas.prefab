@@ -45,6 +45,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cole
       objectReference: {fileID: 0}
+    - target: {fileID: 5397947119901465901, guid: 250bba2834e4fc4449b1175a99fd7a78, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5449619404658653616, guid: 250bba2834e4fc4449b1175a99fd7a78, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -103,6 +107,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3302543469006542722}
     m_Modifications:
+    - target: {fileID: -8886615269703435662, guid: abf3795fe5e49574a9f1d9f1bbeb5597, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 2683699103485678208, guid: abf3795fe5e49574a9f1d9f1bbeb5597, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -213,6 +221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zane
       objectReference: {fileID: 0}
+    - target: {fileID: 8829733792967222342, guid: c7882a36839ea7445be7fec45e731971, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7882a36839ea7445be7fec45e731971, type: 3}
 --- !u!4 &500837890565524763 stripped
@@ -227,6 +239,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3302543469006542722}
     m_Modifications:
+    - target: {fileID: 567336368068980927, guid: 459ed28f57ae9494e917f38625e069f5, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 8580685115366791569, guid: 459ed28f57ae9494e917f38625e069f5, type: 3}
       propertyPath: m_RootOrder
       value: 0

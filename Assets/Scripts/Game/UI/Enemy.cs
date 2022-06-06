@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public GameObject[] Cartas;
     void Start()
     {
-        InvokeRepeating("SpawnCard", 5, 10);
+        InvokeRepeating("SpawnCard", 5, 7);
     }
 
     public Vector3 RandomSpawnPosition1()
